@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                kok:"blue"
+              },
+              backgroundImage: {
+                'rasm': "url('/images/1.jpg')"
+              }
+            }
+          }
+        }
+      </script>
+</head>
+
+<body>
+    <!-- container -->
+    <div class=" gap-5 p-5 md:px-40 py-10 flex flex-col md:flex-row md:h-screen w-full justify-around bg-rasm bg-cover">
+        <!-- left -->
+        <div class="bg-kok w-full md:w-5/12 h-[400px] md:h-full"></div>
+        <!-- right -->
+        <div class="w-full md:w-5/12 h-[400px] md:h-full grid md:grid-cols-2 md:grid-rows-2 gap-5">
+            <img class="w-full h-full object-cover object-center" src="./images/cut pizza.jpg" alt="">
+            <img class="w-full h-full object-cover object-center" src="./images/pizza.jpg" alt="">
+            <img class="w-full h-full object-cover object-center" src="./images/small pizza.jpg" alt="">
+            <img class="w-full h-full object-cover object-center" src="./images/cheese pizza.jpg" alt="">
+        </div>
+    </div>
+</body>
+
+</html>
